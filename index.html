@@ -71,8 +71,8 @@ header { padding: 80px 0 64px; border-bottom: 1px solid var(--border); }
 .badge-live::before { content: ''; width: 4px; height: 4px; border-radius: 50%; background: var(--green); display: inline-block; animation: blink 2s infinite; }
 @keyframes blink { 0%,100%{opacity:1} 50%{opacity:0.3} }
 
-.proj-visit { font-family: 'JetBrains Mono', monospace; font-size: 10px; color: var(--text-3); letter-spacing: 0.06em; transition: color 0.15s; white-space: nowrap; }
-.project-card[href]:hover .proj-visit { color: var(--text-2); }
+.proj-visit { font-family: 'JetBrains Mono', monospace; font-size: 10px; color: #111; background: #fff; border: 1px solid #fff; letter-spacing: 0.06em; padding: 4px 10px; white-space: nowrap; transition: background 0.15s, color 0.15s; }
+.project-card[href]:hover .proj-visit { background: #e8e8e8; border-color: #e8e8e8; }
 
 .proj-subtitle { font-family: 'JetBrains Mono', monospace; font-size: 10px; color: var(--text-3); margin: 6px 0 12px 36px; letter-spacing: 0.03em; }
 .proj-desc { font-size: 13px; color: var(--text-2); line-height: 1.75; margin: 0 0 16px 36px; max-width: 540px; }
@@ -99,8 +99,10 @@ header { padding: 80px 0 64px; border-bottom: 1px solid var(--border); }
 .lightbox-close:hover { color: #fff; }
 
 /* PERSONAL TRADING */
-.personal-trading { border: 1px solid var(--border); border-top: none; background: #0c0c0c; padding: 40px 32px; }
-.pt-label { font-family: 'JetBrains Mono', monospace; font-size: 10px; color: var(--text-3); letter-spacing: 0.12em; text-transform: uppercase; margin-bottom: 20px; }
+.project-card.is-live { background: #0d1a12; }
+.project-card.is-live:hover { background: #112016; }
+.personal-trading { border: 1px solid #1a2e20; border-top: none; background: #0a1a10; padding: 40px 32px; }
+.pt-label { font-family: 'JetBrains Mono', monospace; font-size: 10px; color: #2a6b3a; letter-spacing: 0.12em; text-transform: uppercase; margin-bottom: 20px; }
 .pt-title { font-family: 'DM Serif Display', serif; font-size: clamp(20px,3vw,28px); font-weight: 400; color: var(--text-1); letter-spacing: -0.3px; margin-bottom: 12px; }
 .pt-desc { font-size: 13px; color: #999; line-height: 1.75; max-width: 520px; margin-bottom: 24px; }
 .pt-stats { display: grid; grid-template-columns: repeat(auto-fit,minmax(140px,1fr)); gap: 1px; background: var(--border); border: 1px solid var(--border); margin-bottom: 20px; }
@@ -269,7 +271,7 @@ footer span { font-family: 'JetBrains Mono', monospace; font-size: 10px; color: 
   </a>
 
   <!-- 06 -->
-  <a class="project-card" href="https://react-iwgi58xe.stackblitz.io/" target="_blank">
+  <a class="project-card is-live" href="https://react-iwgi58xe.stackblitz.io/" target="_blank">
     <div class="proj-header">
       <div class="proj-left"><span class="proj-num">06</span><span class="proj-title">NAS100 Nightly Bias Card</span></div>
       <div class="proj-right"><span class="badge-live">Live</span><span class="proj-visit">Visit ↗</span></div>
@@ -285,7 +287,7 @@ footer span { font-family: 'JetBrains Mono', monospace; font-size: 10px; color: 
   </a>
 
   <!-- 07 -->
-  <a class="project-card" href="https://marketmorningbrief.vercel.app/" target="_blank">
+  <a class="project-card is-live" href="https://marketmorningbrief.vercel.app/" target="_blank">
     <div class="proj-header">
       <div class="proj-left"><span class="proj-num">07</span><span class="proj-title">Morning Market Brief</span></div>
       <div class="proj-right"><span class="badge-live">Live</span><span class="proj-visit">Visit ↗</span></div>
@@ -296,7 +298,7 @@ footer span { font-family: 'JetBrains Mono', monospace; font-size: 10px; color: 
   </a>
 
   <!-- 08 -->
-  <a class="project-card" href="https://dce-crush-dashboard.vercel.app/" target="_blank">
+  <a class="project-card is-live" href="https://dce-crush-dashboard.vercel.app/" target="_blank">
     <div class="proj-header">
       <div class="proj-left"><span class="proj-num">08</span><span class="proj-title">DCE Soybean Crush Terminal</span></div>
       <div class="proj-right"><span class="badge-live">Live</span><span class="proj-visit">Visit ↗</span></div>
