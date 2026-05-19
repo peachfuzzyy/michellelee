@@ -12,11 +12,11 @@
   --bg: #090909;
   --surface: #111111;
   --surface-hover: #161616;
-  --border: #1c1c1c;
-  --border-strong: #2a2a2a;
+  --border: #222222;
+  --border-strong: #333333;
   --text-1: #ededed;
-  --text-2: #888;
-  --text-3: #444;
+  --text-2: #aaaaaa;
+  --text-3: #666666;
   --accent: #e8e0d0;
   --green: #22c55e;
   --green-bg: rgba(34,197,94,0.1);
@@ -71,7 +71,8 @@ header { padding: 80px 0 64px; border-bottom: 1px solid var(--border); }
 .badge-live::before { content: ''; width: 4px; height: 4px; border-radius: 50%; background: var(--green); display: inline-block; animation: blink 2s infinite; }
 @keyframes blink { 0%,100%{opacity:1} 50%{opacity:0.3} }
 
-.proj-visit { font-family: 'JetBrains Mono', monospace; font-size: 10px; color: var(--text-2); letter-spacing: 0.06em; opacity: 0; transition: opacity 0.15s; white-space: nowrap; }
+.proj-visit { font-family: 'JetBrains Mono', monospace; font-size: 10px; color: var(--text-3); letter-spacing: 0.06em; transition: color 0.15s; white-space: nowrap; }
+.project-card[href]:hover .proj-visit { color: var(--text-2); }
 
 .proj-subtitle { font-family: 'JetBrains Mono', monospace; font-size: 10px; color: var(--text-3); margin: 6px 0 12px 36px; letter-spacing: 0.03em; }
 .proj-desc { font-size: 13px; color: var(--text-2); line-height: 1.75; margin: 0 0 16px 36px; max-width: 540px; }
@@ -101,14 +102,14 @@ header { padding: 80px 0 64px; border-bottom: 1px solid var(--border); }
 .personal-trading { border: 1px solid var(--border); border-top: none; background: #0c0c0c; padding: 40px 32px; }
 .pt-label { font-family: 'JetBrains Mono', monospace; font-size: 10px; color: var(--text-3); letter-spacing: 0.12em; text-transform: uppercase; margin-bottom: 20px; }
 .pt-title { font-family: 'DM Serif Display', serif; font-size: clamp(20px,3vw,28px); font-weight: 400; color: var(--text-1); letter-spacing: -0.3px; margin-bottom: 12px; }
-.pt-desc { font-size: 13px; color: var(--text-2); line-height: 1.75; max-width: 520px; margin-bottom: 24px; }
+.pt-desc { font-size: 13px; color: #999; line-height: 1.75; max-width: 520px; margin-bottom: 24px; }
 .pt-stats { display: grid; grid-template-columns: repeat(auto-fit,minmax(140px,1fr)); gap: 1px; background: var(--border); border: 1px solid var(--border); margin-bottom: 20px; }
 .pt-stat { background: #0c0c0c; padding: 16px 20px; transition: background 0.15s; }
 .pt-stat:hover { background: #111; }
 .pt-stat-val { font-family: 'DM Serif Display', serif; font-size: 22px; color: var(--text-1); letter-spacing: -0.3px; margin-bottom: 3px; }
-.pt-stat-lbl { font-family: 'JetBrains Mono', monospace; font-size: 9px; color: var(--text-3); letter-spacing: 0.08em; text-transform: uppercase; }
+.pt-stat-lbl { font-family: 'JetBrains Mono', monospace; font-size: 9px; color: #555; letter-spacing: 0.08em; text-transform: uppercase; }
 .pt-tags { display: flex; flex-wrap: wrap; gap: 5px; }
-.pt-tag { font-family: 'JetBrains Mono', monospace; font-size: 9px; color: var(--text-3); border: 1px solid var(--border); padding: 2px 7px; letter-spacing: 0.04em; text-transform: uppercase; }
+.pt-tag { font-family: 'JetBrains Mono', monospace; font-size: 9px; color: #555; border: 1px solid #222; padding: 2px 7px; letter-spacing: 0.04em; text-transform: uppercase; }
 
 /* CONTACT */
 .contact-section { padding: 64px 0 72px; border-top: 1px solid var(--border); }
