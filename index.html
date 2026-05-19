@@ -99,19 +99,21 @@ header { padding: 80px 0 64px; border-bottom: 1px solid var(--border); }
 .lightbox-close:hover { color: #fff; }
 
 /* PERSONAL TRADING */
-.project-card.is-live { background: #0d1a12; }
-.project-card.is-live:hover { background: #112016; }
-.personal-trading { border: 1px solid #1a2e20; border-top: none; background: #0a1a10; padding: 40px 32px; }
-.pt-label { font-family: 'JetBrains Mono', monospace; font-size: 10px; color: #2a6b3a; letter-spacing: 0.12em; text-transform: uppercase; margin-bottom: 20px; }
-.pt-title { font-family: 'DM Serif Display', serif; font-size: clamp(20px,3vw,28px); font-weight: 400; color: var(--text-1); letter-spacing: -0.3px; margin-bottom: 12px; }
-.pt-desc { font-size: 13px; color: #999; line-height: 1.75; max-width: 520px; margin-bottom: 24px; }
-.pt-stats { display: grid; grid-template-columns: repeat(auto-fit,minmax(140px,1fr)); gap: 1px; background: var(--border); border: 1px solid var(--border); margin-bottom: 20px; }
-.pt-stat { background: #0c0c0c; padding: 16px 20px; transition: background 0.15s; }
-.pt-stat:hover { background: #111; }
-.pt-stat-val { font-family: 'DM Serif Display', serif; font-size: 22px; color: var(--text-1); letter-spacing: -0.3px; margin-bottom: 3px; }
-.pt-stat-lbl { font-family: 'JetBrains Mono', monospace; font-size: 9px; color: #555; letter-spacing: 0.08em; text-transform: uppercase; }
+.project-card.is-live { background: #0d1118; }
+.project-card.is-live:hover { background: #111520; }
+.project-card.is-research { background: #16141f; }
+.project-card.is-research:hover { background: #1a1825; }
+.personal-trading { border: 1px solid #ddd8cc; border-top: none; background: #f5f0e6; padding: 40px 32px; }
+.pt-label { font-family: 'JetBrains Mono', monospace; font-size: 10px; color: #b5a98a; letter-spacing: 0.12em; text-transform: uppercase; margin-bottom: 20px; }
+.pt-title { font-family: 'DM Serif Display', serif; font-size: clamp(20px,3vw,28px); font-weight: 400; color: #1a1916; letter-spacing: -0.3px; margin-bottom: 12px; }
+.pt-desc { font-size: 13px; color: #6b6456; line-height: 1.75; max-width: 520px; margin-bottom: 24px; }
+.pt-stats { display: grid; grid-template-columns: repeat(auto-fit,minmax(140px,1fr)); gap: 1px; background: #ddd8cc; border: 1px solid #ddd8cc; margin-bottom: 20px; }
+.pt-stat { background: #f5f0e6; padding: 16px 20px; transition: background 0.15s; }
+.pt-stat:hover { background: #ede8dc; }
+.pt-stat-val { font-family: 'DM Serif Display', serif; font-size: 22px; color: #1a1916; letter-spacing: -0.3px; margin-bottom: 3px; }
+.pt-stat-lbl { font-family: 'JetBrains Mono', monospace; font-size: 9px; color: #a09484; letter-spacing: 0.08em; text-transform: uppercase; }
 .pt-tags { display: flex; flex-wrap: wrap; gap: 5px; }
-.pt-tag { font-family: 'JetBrains Mono', monospace; font-size: 9px; color: #555; border: 1px solid #222; padding: 2px 7px; letter-spacing: 0.04em; text-transform: uppercase; }
+.pt-tag { font-family: 'JetBrains Mono', monospace; font-size: 9px; color: #8a7e6e; border: 1px solid #ddd8cc; padding: 2px 7px; letter-spacing: 0.04em; text-transform: uppercase; }
 
 /* CONTACT */
 .contact-section { padding: 64px 0 72px; border-top: 1px solid var(--border); }
@@ -314,7 +316,7 @@ footer span { font-family: 'JetBrains Mono', monospace; font-size: 10px; color: 
   </a>
 
   <!-- 09 -->
-  <div class="project-card">
+  <div class="project-card is-research">
     <div class="proj-header">
       <div class="proj-left"><span class="proj-num">09</span><span class="proj-title">Structured Products Simulator</span></div>
     </div>
@@ -329,7 +331,7 @@ footer span { font-family: 'JetBrains Mono', monospace; font-size: 10px; color: 
   </div>
 
   <!-- 10 -->
-  <div class="project-card">
+  <div class="project-card is-research">
     <div class="proj-header">
       <div class="proj-left"><span class="proj-num">10</span><span class="proj-title">Order Flow Indicator Suite</span></div>
     </div>
