@@ -60,7 +60,6 @@ header { padding: 80px 0 64px; border-bottom: 1px solid var(--border); }
 .project-card.visible { opacity: 1; transform: translateY(0); }
 .project-card[href] { cursor: pointer; }
 .project-card[href]:hover { background: var(--surface-hover); border-color: var(--border-strong); }
-.project-card[href]:hover .proj-visit { opacity: 1; }
 
 .proj-header { display: flex; align-items: flex-start; justify-content: space-between; gap: 16px; margin-bottom: 4px; }
 .proj-left { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
@@ -78,12 +77,12 @@ header { padding: 80px 0 64px; border-bottom: 1px solid var(--border); }
 .proj-subtitle { font-family: 'JetBrains Mono', monospace; font-size: 10px; color: var(--text-3); margin: 6px 0 12px 0; letter-spacing: 0.03em; }
 .proj-desc { font-size: 13px; color: var(--text-2); line-height: 1.75; margin: 0 0 16px 0; max-width: 100%; }
 
-.proj-stats { display: flex; flex-wrap: nowrap; gap: 32px; margin: 0 0 16px 0; align-items: flex-start; border-top: 1px solid var(--border); padding-top: 16px; }
-.proj-stats > div { display: flex; flex-direction: column; flex-shrink: 0; }
-.stat-val { font-family: 'DM Serif Display', serif; font-size: 20px; color: var(--text-1); display: block; letter-spacing: -0.2px; white-space: nowrap; }
+.proj-stats { display: flex; flex-direction: row; flex-wrap: nowrap; gap: 40px; margin: 0 0 16px 0; align-items: flex-start; border-top: 1px solid var(--border); padding-top: 16px; overflow: hidden; }
+.proj-stats > div { display: flex; flex-direction: column; flex-shrink: 0; min-width: 0; }
+.stat-val { font-family: 'JetBrains Mono', monospace; font-size: 18px; font-weight: 500; color: var(--text-1); display: block; letter-spacing: -0.2px; white-space: nowrap; }
 .stat-lbl { font-family: 'JetBrains Mono', monospace; font-size: 9px; color: var(--text-3); text-transform: uppercase; letter-spacing: 0.08em; display: block; margin-top: 2px; white-space: nowrap; }
 
-.proj-tags { display: flex; flex-wrap: wrap; gap: 5px; margin-left: 0; }
+.proj-tags { display: flex; flex-wrap: wrap; gap: 5px; }
 .ptag { font-family: 'JetBrains Mono', monospace; font-size: 9px; color: var(--text-3); border: 1px solid var(--border); padding: 2px 7px; letter-spacing: 0.04em; text-transform: uppercase; transition: border-color 0.15s, color 0.15s; }
 .project-card[href]:hover .ptag { border-color: var(--border-strong); color: var(--text-2); }
 
@@ -116,7 +115,7 @@ header { padding: 80px 0 64px; border-bottom: 1px solid var(--border); }
 .pt-tag { font-family: 'JetBrains Mono', monospace; font-size: 9px; color: #8a7e6e; border: 1px solid #ddd8cc; padding: 2px 7px; letter-spacing: 0.04em; text-transform: uppercase; }
 
 /* CONTACT */
-.contact-section { padding: 64px 0 72px; border-top: 1px solid var(--border); background: #f5f0e6; margin: 0 -40px; padding: 64px 40px 72px; }
+.contact-section { background: #f5f0e6; margin: 0 -40px; padding: 64px 40px 72px; }
 .contact-section .section-label { padding-top: 0; color: #b5a98a; }
 .contact-intro { font-size: 13px; color: #6b6456; line-height: 1.75; max-width: 100%; margin-bottom: 24px; white-space: nowrap; }
 .contact-grid { display: flex; gap: 10px; flex-wrap: wrap; }
@@ -152,7 +151,7 @@ footer span { font-family: 'JetBrains Mono', monospace; font-size: 10px; color: 
   </div>
   <p class="header-desc">Ex-national athlete (7x Champion, Ranked #3), equity trader, and founder.<br>Experience across SGX, HKEX, SET, and US markets. Builds institutional-grade analytics on Bloomberg BQuant and Python.<br><br>Raised $500K seed funding and scaled a business from zero to $120K+ profit in Year 1.</p>
   <div class="header-tags">
-    <span class="htag">Python</span><span class="htag">Bloomberg BQL</span><span class="htag">BQuant</span><span class="htag">React</span><span class="htag">Pine Script</span><span class="htag">MQL5</span><span class="htag">SGX · HKEX · SET · US</span>
+    <span class="htag">Python</span><span class="htag">Bloomberg BQL</span><span class="htag">BQuant</span><span class="htag">React</span><span class="htag">Pine Script</span><span class="htag">MQL5</span><span class="htag">SGX · HKEX · SET · NQ</span>
   </div>
 </header>
 
@@ -185,8 +184,8 @@ footer span { font-family: 'JetBrains Mono', monospace; font-size: 10px; color: 
     <div class="proj-tags"><span class="ptag">L2 Order Flow</span><span class="ptag">RVOL</span><span class="ptag">ATR</span><span class="ptag">SG · SET · HK</span></div>
   </div>
 
-</div><!-- end projects-list -->
-</div><!-- end container -->
+</div>
+</div>
 
 <!-- PERSONAL TRADING -->
 <div class="container">
@@ -330,8 +329,7 @@ footer span { font-family: 'JetBrains Mono', monospace; font-size: 10px; color: 
     <div class="proj-tags"><span class="ptag">React</span><span class="ptag">DCI</span><span class="ptag">Accumulators</span><span class="ptag">Barrier Options</span><span class="ptag">Perps</span><span class="ptag">Greeks</span></div>
   </div>
 
-
-</div><!-- end projects-list -->
+</div>
 
 <div class="contact-section">
   <div class="section-label">Contact</div>
