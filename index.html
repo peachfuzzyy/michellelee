@@ -424,7 +424,7 @@
         observer.unobserve(entry.target);
       }
     });
-  }, { threshold: 0.08 });
+  }, { threshold: 0.02, rootMargin: '0px 0px -40px 0px' });
 
   document.querySelectorAll('.project-card').forEach(el => {
     el.classList.add('reveal');
