@@ -78,9 +78,10 @@ header { padding: 80px 0 64px; border-bottom: 1px solid var(--border); }
 .proj-subtitle { font-family: 'JetBrains Mono', monospace; font-size: 10px; color: var(--text-3); margin: 6px 0 12px 0; letter-spacing: 0.03em; }
 .proj-desc { font-size: 13px; color: var(--text-2); line-height: 1.75; margin: 0 0 16px 0; max-width: 100%; }
 
-.proj-stats { display: flex; flex-wrap: nowrap; gap: 32px; margin: 0 0 16px 0; align-items: flex-end; border-top: 1px solid var(--border); padding-top: 16px; }
-.stat-val { font-family: 'DM Serif Display', serif; font-size: 20px; color: var(--text-1); display: block; letter-spacing: -0.2px; }
-.stat-lbl { font-family: 'JetBrains Mono', monospace; font-size: 9px; color: var(--text-3); text-transform: uppercase; letter-spacing: 0.08em; display: block; margin-top: 1px; }
+.proj-stats { display: flex; flex-wrap: nowrap; gap: 32px; margin: 0 0 16px 0; align-items: flex-start; border-top: 1px solid var(--border); padding-top: 16px; }
+.proj-stats > div { display: flex; flex-direction: column; flex-shrink: 0; }
+.stat-val { font-family: 'DM Serif Display', serif; font-size: 20px; color: var(--text-1); display: block; letter-spacing: -0.2px; white-space: nowrap; }
+.stat-lbl { font-family: 'JetBrains Mono', monospace; font-size: 9px; color: var(--text-3); text-transform: uppercase; letter-spacing: 0.08em; display: block; margin-top: 2px; white-space: nowrap; }
 
 .proj-tags { display: flex; flex-wrap: wrap; gap: 5px; margin-left: 0; }
 .ptag { font-family: 'JetBrains Mono', monospace; font-size: 9px; color: var(--text-3); border: 1px solid var(--border); padding: 2px 7px; letter-spacing: 0.04em; text-transform: uppercase; transition: border-color 0.15s, color 0.15s; }
@@ -329,20 +330,6 @@ footer span { font-family: 'JetBrains Mono', monospace; font-size: 10px; color: 
     <div class="proj-tags"><span class="ptag">React</span><span class="ptag">DCI</span><span class="ptag">Accumulators</span><span class="ptag">Barrier Options</span><span class="ptag">Perps</span><span class="ptag">Greeks</span></div>
   </div>
 
-  <!-- 10 -->
-  <div class="project-card is-research">
-    <div class="proj-header">
-      <div class="proj-left"><span class="proj-num">10</span><span class="proj-title">Order Flow Indicator Suite</span></div>
-    </div>
-    <div class="proj-subtitle">Pine Script v6 · TradingView · NAS100</div>
-    <p class="proj-desc">A suite of custom TradingView indicators built around order flow microstructure. CVD divergence detector uses pivot-based logic to flag institutional absorption. DEFF (Delta Efficiency) measures price change per unit of net aggressive flow, detecting three-stage exhaustion sequences. Volume Delta + Aggression Ratio with SD bands surfaces directional conviction. Breakout Probability Scoring composites all signals into a single bull/bear score via a compact overlay table.</p>
-    <div class="proj-stats">
-      <div><span class="stat-val">4</span><span class="stat-lbl">Indicators</span></div>
-      <div><span class="stat-val">BPS</span><span class="stat-lbl">Composite Score</span></div>
-      <div><span class="stat-val">Pine v6</span><span class="stat-lbl">TradingView</span></div>
-    </div>
-    <div class="proj-tags"><span class="ptag">Pine Script v6</span><span class="ptag">CVD</span><span class="ptag">DEFF</span><span class="ptag">Aggression Ratio</span><span class="ptag">BPS</span><span class="ptag">Order Flow</span></div>
-  </div>
 
 </div><!-- end projects-list -->
 
